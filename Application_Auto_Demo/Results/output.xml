@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231128 20:35:06.853" rpa="false" schemaversion="4">
+<suite id="s1" name="Testcase1" source="C:\Users\admin\PycharmProjects\firstpythonProject2\Application_Auto_Demo\Testcases\Testcase1.robot">
+<test id="s1-t1" name="Click on layout one column option in AMP email template" line="14">
+<kw name="Choose new canvas">
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>60s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20231128 20:35:07.243" endtime="20231128 20:35:07.243"/>
+</kw>
+<kw name="Load Browser" library="PO_LoginPage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231128 20:35:07.243" level="INFO">Opening browser 'firefox' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20231128 20:35:07.243" endtime="20231128 20:35:17.053"/>
+</kw>
+<status status="PASS" starttime="20231128 20:35:07.243" endtime="20231128 20:35:17.053"/>
+</kw>
+<kw name="Login using Credentials" library="PO_LoginPage">
+<kw name="Open URL" library="PO_LoginPage">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231128 20:35:17.053" level="INFO">Opening url 'https://login.netcoresmartech.com/'</msg>
+<status status="PASS" starttime="20231128 20:35:17.053" endtime="20231128 20:35:25.747"/>
+</kw>
+<status status="PASS" starttime="20231128 20:35:17.053" endtime="20231128 20:35:25.752"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231128 20:35:25.752" endtime="20231128 20:35:26.013"/>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>15s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20231128 20:35:26.013" endtime="20231128 20:35:26.013"/>
+</kw>
+<kw name="Login AccountName" library="PO_LoginPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${AccountName_Locator}</arg>
+<arg>${AccountName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231128 20:35:26.013" level="INFO">Typing text 'qa_manual1' into text field 'id:accountName'.</msg>
+<status status="PASS" starttime="20231128 20:35:26.013" endtime="20231128 20:35:26.182"/>
+</kw>
+<status status="PASS" starttime="20231128 20:35:26.013" endtime="20231128 20:35:26.182"/>
+</kw>
+<kw name="Login UserName" library="PO_LoginPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${UserName_Locator}</arg>
+<arg>${UserName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231128 20:35:26.182" level="INFO">Typing text 'test_automation' into text field 'id:userName'.</msg>
+<status status="PASS" starttime="20231128 20:35:26.182" endtime="20231128 20:35:26.252"/>
+</kw>
+<status status="PASS" starttime="20231128 20:35:26.182" endtime="20231128 20:35:26.252"/>
+</kw>
+<kw name="Login Password" library="PO_LoginPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Password_Locator}</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231128 20:35:26.252" level="INFO">Typing text 'Auto@50@52' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20231128 20:35:26.252" endtime="20231128 20:35:26.343"/>
+</kw>
+<status status="PASS" starttime="20231128 20:35:26.252" endtime="20231128 20:35:26.343"/>
+</kw>
+<kw name="Click Login Button" library="PO_LoginPage">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${LoginButton_Locator}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231128 20:35:26.343" level="INFO">Clicking button 'id:btnLogin'.</msg>
+<status status="PASS" starttime="20231128 20:35:26.343" endtime="20231128 20:35:44.503"/>
+</kw>
+<status status="PASS" starttime="20231128 20:35:26.343" endtime="20231128 20:35:44.503"/>
+</kw>
+<kw name="Verify Loaded Homepage" library="PO_LoginPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Homepage_Locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231128 20:35:44.503" endtime="20231128 20:35:44.647"/>
+</kw>
+<status status="PASS" starttime="20231128 20:35:44.503" endtime="20231128 20:35:44.647"/>
+</kw>
+<status status="PASS" starttime="20231128 20:35:17.053" endtime="20231128 20:35:44.647"/>
+</kw>
+<kw name="Load AMP Page" library="PO_Homepage">
+<kw name="Click Content Tab" library="PO_Homepage">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${contenttab_link_locator}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20231128 20:35:44.652" level="INFO">Clicking link 'xpath://a[@id='sit_3']'.</msg>
+<status status="PASS" starttime="20231128 20:35:44.647" endtime="20231128 20:35:58.282"/>
+</kw>
+<status status="PASS" starttime="20231128 20:35:44.647" endtime="20231128 20:35:58.287"/>
+</kw>
+<kw name="Verify Loaded Content Tab" library="PO_Homepage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${content_verification_locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231128 20:35:58.287" endtime="20231128 20:35:58.302"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${content_text}</var>
+<arg>${content_verification_locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:35:58.352" level="INFO">${content_text} = Content</msg>
+<status status="PASS" starttime="20231128 20:35:58.302" endtime="20231128 20:35:58.352"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${content_text}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:35:58.352" level="INFO">Content</msg>
+<status status="PASS" starttime="20231128 20:35:58.352" endtime="20231128 20:35:58.352"/>
+</kw>
+<status status="PASS" starttime="20231128 20:35:58.287" endtime="20231128 20:35:58.352"/>
+</kw>
+<kw name="Click AMP Template Tab" library="PO_Homepage">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>${AMP_Template_locator}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20231128 20:35:58.352" level="INFO">Clicking link 'xpath://a[contains(@href, 'amptemplates')]'.</msg>
+<status status="PASS" starttime="20231128 20:35:58.352" endtime="20231128 20:36:02.127"/>
+</kw>
+<status status="PASS" starttime="20231128 20:35:58.352" endtime="20231128 20:36:02.127"/>
+</kw>
+<kw name="Verify AMP Template Tab" library="PO_Homepage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${AMP_Page_locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231128 20:36:02.127" endtime="20231128 20:36:02.612"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${AMPoption}</var>
+<arg>${AMP_Page_locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:36:02.702" level="INFO">${AMPoption} = Create a new AMP template or select from the gallery</msg>
+<status status="PASS" starttime="20231128 20:36:02.612" endtime="20231128 20:36:02.702"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${AMPoption}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:02.702" level="INFO">Create a new AMP template or select from the gallery</msg>
+<status status="PASS" starttime="20231128 20:36:02.702" endtime="20231128 20:36:02.702"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${AMPoption}</arg>
+<arg>${AMPTemplatepage}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20231128 20:36:02.702" endtime="20231128 20:36:02.702"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:02.127" endtime="20231128 20:36:02.702"/>
+</kw>
+<status status="PASS" starttime="20231128 20:35:44.647" endtime="20231128 20:36:02.702"/>
+</kw>
+<kw name="Choose Blank canvas" library="PO_AMPPage">
+<kw name="click to select template" library="PO_AMPPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${AMP_Page_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:36:02.707" level="INFO">Clicking element 'xpath://div[@class='nxt-apn-template-options']/p'.</msg>
+<status status="PASS" starttime="20231128 20:36:02.707" endtime="20231128 20:36:03.303"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:02.702" endtime="20231128 20:36:03.303"/>
+</kw>
+<kw name="Verify AMP email template" library="PO_AMPPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${AMP_emailtemplate_locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231128 20:36:03.303" endtime="20231128 20:36:03.333"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${AMP_header}</var>
+<arg>${AMP_emailtemplate_locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:36:03.352" level="INFO">${AMP_header} = Select template</msg>
+<status status="PASS" starttime="20231128 20:36:03.333" endtime="20231128 20:36:03.352"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:03.303" endtime="20231128 20:36:03.352"/>
+</kw>
+<kw name="Verify Blank Canvas Option" library="PO_AMPPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Blank_canvas_selecter}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231128 20:36:03.352" endtime="20231128 20:36:06.007"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Blank_canvas}</var>
+<arg>${Blank_canvas_selecter}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:36:06.067" level="INFO">${Blank_canvas} = Blank Canvas</msg>
+<status status="PASS" starttime="20231128 20:36:06.007" endtime="20231128 20:36:06.067"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Blank_canvas}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:06.067" level="INFO">Blank Canvas</msg>
+<status status="PASS" starttime="20231128 20:36:06.067" endtime="20231128 20:36:06.067"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${Blank_canvas}</arg>
+<arg>${Blank_canvas_tab}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20231128 20:36:06.067" endtime="20231128 20:36:06.067"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:03.352" endtime="20231128 20:36:06.067"/>
+</kw>
+<kw name="Click blank canvas option" library="PO_AMPPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Blank_canvas_selecter}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231128 20:36:06.067" endtime="20231128 20:36:06.082"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Blank_canvas_selecter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:36:06.082" level="INFO">Clicking element 'xpath://div[@class='nxt-apn-template-options']/p'.</msg>
+<status status="PASS" starttime="20231128 20:36:06.082" endtime="20231128 20:36:06.342"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:06.067" endtime="20231128 20:36:06.342"/>
+</kw>
+<kw name="Verify Select template editor" library="PO_AMPPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Template_editor}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231128 20:36:06.342" endtime="20231128 20:36:06.357"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${select_template_title}</var>
+<arg>${Template_editor}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:36:06.377" level="INFO">${select_template_title} = Select template editor</msg>
+<status status="PASS" starttime="20231128 20:36:06.357" endtime="20231128 20:36:06.377"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${select_template_title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:06.377" level="INFO">Select template editor</msg>
+<status status="PASS" starttime="20231128 20:36:06.377" endtime="20231128 20:36:06.377"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${select_template_title}</arg>
+<arg>${Template_title}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20231128 20:36:06.377" endtime="20231128 20:36:06.377"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:06.342" endtime="20231128 20:36:06.377"/>
+</kw>
+<kw name="Check Drag and Drop and Code editor" library="PO_AMPPage">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${email editor option}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231128 20:36:06.377" endtime="20231128 20:36:06.387"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Drag and Drop Option}</var>
+<arg>${Drag and Drop locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:36:06.405" level="INFO">${Drag and Drop Option} = Drag &amp; drop</msg>
+<status status="PASS" starttime="20231128 20:36:06.387" endtime="20231128 20:36:06.405"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Drag and Drop Option}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:06.405" level="INFO">Drag &amp; drop</msg>
+<status status="PASS" starttime="20231128 20:36:06.405" endtime="20231128 20:36:06.405"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${Code editor option}</var>
+<arg>${Code editor locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:36:06.435" level="INFO">${Code editor option} = Code editor</msg>
+<status status="PASS" starttime="20231128 20:36:06.405" endtime="20231128 20:36:06.442"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${Code editor Option}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:06.443" level="INFO">Code editor</msg>
+<status status="PASS" starttime="20231128 20:36:06.443" endtime="20231128 20:36:06.443"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:06.377" endtime="20231128 20:36:06.443"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:02.702" endtime="20231128 20:36:06.443"/>
+</kw>
+<kw name="Check Email Template options" library="PO_Emailtemplate">
+<kw name="Click Drag and Drop email template" library="PO_Emailtemplate">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Drag and Drop locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:36:06.447" level="INFO">Clicking element 'xpath:(//div[@class='nxt-card nxt-card-code-editor']//p)[text()='Drag &amp; drop']'.</msg>
+<status status="PASS" starttime="20231128 20:36:06.447" endtime="20231128 20:36:07.022"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:06.445" endtime="20231128 20:36:07.022"/>
+</kw>
+<kw name="Verify Email template page" library="PO_Emailtemplate">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${Email template page locator}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231128 20:36:07.022" endtime="20231128 20:36:07.202"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${page_header}</var>
+<arg>${Email template page locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:36:07.477" level="INFO">${page_header} = FORM SETUP</msg>
+<status status="PASS" starttime="20231128 20:36:07.202" endtime="20231128 20:36:07.477"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${page_header}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:07.477" level="INFO">FORM SETUP</msg>
+<status status="PASS" starttime="20231128 20:36:07.477" endtime="20231128 20:36:07.477"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:07.022" endtime="20231128 20:36:07.477"/>
+</kw>
+<kw name="Check email template box" library="PO_Emailtemplate">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${iFrame id}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231128 20:36:07.477" endtime="20231128 20:36:07.902"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>${iFrame id}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20231128 20:36:07.902" level="INFO">Selecting frame 'id:ampEditor'.</msg>
+<status status="PASS" starttime="20231128 20:36:07.902" endtime="20231128 20:36:08.307"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>30s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231128 20:36:38.307" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20231128 20:36:08.307" endtime="20231128 20:36:38.307"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:07.477" endtime="20231128 20:36:38.307"/>
+</kw>
+<kw name="Check Options in Template" library="PO_Emailtemplate">
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${template_list_count}</var>
+<arg>${template list count locator}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231128 20:36:38.312" level="INFO">${template_list_count} = 4</msg>
+<status status="PASS" starttime="20231128 20:36:38.307" endtime="20231128 20:36:38.312"/>
+</kw>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${count}</var>
+<arg>${template_list_count}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20231128 20:36:38.312" level="INFO">${count} = 4</msg>
+<status status="PASS" starttime="20231128 20:36:38.312" endtime="20231128 20:36:38.312"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${count}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:38.312" level="INFO">4</msg>
+<status status="PASS" starttime="20231128 20:36:38.312" endtime="20231128 20:36:38.312"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{template_list}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20231128 20:36:38.312" level="INFO">@{template_list} = [ ]</msg>
+<status status="PASS" starttime="20231128 20:36:38.312" endtime="20231128 20:36:38.312"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>${count}+1</value>
+<iter>
+<var name="${i}">1</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${options}</var>
+<arg>xpath:(//div[@class='empty-state-buttons']/a/span)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:36:38.332" level="INFO">${options} = Layout</msg>
+<status status="PASS" starttime="20231128 20:36:38.312" endtime="20231128 20:36:38.332"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${options}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:38.332" level="INFO">Layout</msg>
+<status status="PASS" starttime="20231128 20:36:38.332" endtime="20231128 20:36:38.332"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${template_list}</arg>
+<arg>${options}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231128 20:36:38.332" endtime="20231128 20:36:38.332"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:38.312" endtime="20231128 20:36:38.332"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${options}</var>
+<arg>xpath:(//div[@class='empty-state-buttons']/a/span)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:36:38.342" level="INFO">${options} = Basic Elements</msg>
+<status status="PASS" starttime="20231128 20:36:38.332" endtime="20231128 20:36:38.342"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${options}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:38.342" level="INFO">Basic Elements</msg>
+<status status="PASS" starttime="20231128 20:36:38.342" endtime="20231128 20:36:38.342"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${template_list}</arg>
+<arg>${options}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231128 20:36:38.342" endtime="20231128 20:36:38.342"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:38.332" endtime="20231128 20:36:38.342"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${options}</var>
+<arg>xpath:(//div[@class='empty-state-buttons']/a/span)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:36:38.352" level="INFO">${options} = Form</msg>
+<status status="PASS" starttime="20231128 20:36:38.342" endtime="20231128 20:36:38.352"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${options}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:38.352" level="INFO">Form</msg>
+<status status="PASS" starttime="20231128 20:36:38.352" endtime="20231128 20:36:38.352"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${template_list}</arg>
+<arg>${options}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231128 20:36:38.352" endtime="20231128 20:36:38.352"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:38.342" endtime="20231128 20:36:38.352"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${options}</var>
+<arg>xpath:(//div[@class='empty-state-buttons']/a/span)[${i}]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:36:38.362" level="INFO">${options} = Widgets</msg>
+<status status="PASS" starttime="20231128 20:36:38.352" endtime="20231128 20:36:38.362"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${options}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:38.362" level="INFO">Widgets</msg>
+<status status="PASS" starttime="20231128 20:36:38.362" endtime="20231128 20:36:38.362"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${template_list}</arg>
+<arg>${options}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231128 20:36:38.362" endtime="20231128 20:36:38.362"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:38.352" endtime="20231128 20:36:38.362"/>
+</iter>
+<status status="PASS" starttime="20231128 20:36:38.312" endtime="20231128 20:36:38.362"/>
+</for>
+<kw name="Log" library="BuiltIn">
+<arg>${template_list}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:38.362" level="INFO">['Layout', 'Basic Elements', 'Form', 'Widgets']</msg>
+<status status="PASS" starttime="20231128 20:36:38.362" endtime="20231128 20:36:38.362"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:38.307" endtime="20231128 20:36:38.362"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:06.445" endtime="20231128 20:36:38.362"/>
+</kw>
+<status status="PASS" starttime="20231128 20:35:07.243" endtime="20231128 20:36:38.362"/>
+</kw>
+<kw name="Move Pointer to Layout Option and get available options" library="PO_EmailOptions">
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>80s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20231128 20:36:38.362" endtime="20231128 20:36:38.372"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${Layout option locator}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20231128 20:36:38.372" level="INFO">Simulating Mouse Over on element 'xpath:(//div[@class='empty-state-buttons']/a/span)[1]'.</msg>
+<status status="PASS" starttime="20231128 20:36:38.372" endtime="20231128 20:36:38.672"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<var>${layout_option_counts}</var>
+<arg>${Layout count}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<msg timestamp="20231128 20:36:38.692" level="INFO">${layout_option_counts} = 10</msg>
+<status status="PASS" starttime="20231128 20:36:38.672" endtime="20231128 20:36:38.692"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${layout_option_counts}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:38.692" level="INFO">10</msg>
+<status status="PASS" starttime="20231128 20:36:38.692" endtime="20231128 20:36:38.692"/>
+</kw>
+<kw name="Convert To Integer" library="BuiltIn">
+<var>${layout_option_count}</var>
+<arg>${layout_option_counts}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<msg timestamp="20231128 20:36:38.692" level="INFO">${layout_option_count} = 10</msg>
+<status status="PASS" starttime="20231128 20:36:38.692" endtime="20231128 20:36:38.692"/>
+</kw>
+<kw name="Should Not Be Equal As Integers" library="BuiltIn">
+<arg>${layout_option_count}</arg>
+<arg>0</arg>
+<doc>Fails if objects are equal after converting them to integers.</doc>
+<msg timestamp="20231128 20:36:38.692" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<status status="PASS" starttime="20231128 20:36:38.692" endtime="20231128 20:36:38.692"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{layout_options}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20231128 20:36:38.692" level="INFO">@{layout_options} = [ ]</msg>
+<status status="PASS" starttime="20231128 20:36:38.692" endtime="20231128 20:36:38.692"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>2</value>
+<value>${layout_option_count}+1</value>
+<iter>
+<var name="${i}">2</var>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${temp}</var>
+<arg>xpath:(//div[@id='popup-grid-section-box']//li[@data-section='Base'])[${i}]</arg>
+<arg>data-type</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20231128 20:36:38.712" level="INFO">${temp} = html/oneColumn</msg>
+<status status="PASS" starttime="20231128 20:36:38.692" endtime="20231128 20:36:38.712"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${temp}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:38.712" level="INFO">html/oneColumn</msg>
+<status status="PASS" starttime="20231128 20:36:38.712" endtime="20231128 20:36:38.712"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${layout_options}</arg>
+<arg>${temp}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231128 20:36:38.712" endtime="20231128 20:36:38.712"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:38.692" endtime="20231128 20:36:38.712"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${temp}</var>
+<arg>xpath:(//div[@id='popup-grid-section-box']//li[@data-section='Base'])[${i}]</arg>
+<arg>data-type</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20231128 20:36:38.737" level="INFO">${temp} = html/twoColumnCustomL</msg>
+<status status="PASS" starttime="20231128 20:36:38.712" endtime="20231128 20:36:38.737"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${temp}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:38.737" level="INFO">html/twoColumnCustomL</msg>
+<status status="PASS" starttime="20231128 20:36:38.737" endtime="20231128 20:36:38.737"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${layout_options}</arg>
+<arg>${temp}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231128 20:36:38.737" endtime="20231128 20:36:38.737"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:38.712" endtime="20231128 20:36:38.737"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${temp}</var>
+<arg>xpath:(//div[@id='popup-grid-section-box']//li[@data-section='Base'])[${i}]</arg>
+<arg>data-type</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20231128 20:36:38.757" level="INFO">${temp} = html/twoColumnCustomR</msg>
+<status status="PASS" starttime="20231128 20:36:38.742" endtime="20231128 20:36:38.757"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${temp}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:38.757" level="INFO">html/twoColumnCustomR</msg>
+<status status="PASS" starttime="20231128 20:36:38.757" endtime="20231128 20:36:38.757"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${layout_options}</arg>
+<arg>${temp}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231128 20:36:38.757" endtime="20231128 20:36:38.757"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:38.737" endtime="20231128 20:36:38.757"/>
+</iter>
+<iter>
+<var name="${i}">5</var>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${temp}</var>
+<arg>xpath:(//div[@id='popup-grid-section-box']//li[@data-section='Base'])[${i}]</arg>
+<arg>data-type</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20231128 20:36:38.772" level="INFO">${temp} = html/twoColumnImg</msg>
+<status status="PASS" starttime="20231128 20:36:38.757" endtime="20231128 20:36:38.772"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${temp}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:38.772" level="INFO">html/twoColumnImg</msg>
+<status status="PASS" starttime="20231128 20:36:38.772" endtime="20231128 20:36:38.772"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${layout_options}</arg>
+<arg>${temp}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231128 20:36:38.772" endtime="20231128 20:36:38.772"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:38.757" endtime="20231128 20:36:38.772"/>
+</iter>
+<iter>
+<var name="${i}">6</var>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${temp}</var>
+<arg>xpath:(//div[@id='popup-grid-section-box']//li[@data-section='Base'])[${i}]</arg>
+<arg>data-type</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20231128 20:36:38.797" level="INFO">${temp} = html/twoColumnL1</msg>
+<status status="PASS" starttime="20231128 20:36:38.772" endtime="20231128 20:36:38.797"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${temp}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:38.797" level="INFO">html/twoColumnL1</msg>
+<status status="PASS" starttime="20231128 20:36:38.797" endtime="20231128 20:36:38.802"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${layout_options}</arg>
+<arg>${temp}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231128 20:36:38.802" endtime="20231128 20:36:38.802"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:38.772" endtime="20231128 20:36:38.802"/>
+</iter>
+<iter>
+<var name="${i}">7</var>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${temp}</var>
+<arg>xpath:(//div[@id='popup-grid-section-box']//li[@data-section='Base'])[${i}]</arg>
+<arg>data-type</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20231128 20:36:38.812" level="INFO">${temp} = html/twoColumnR1</msg>
+<status status="PASS" starttime="20231128 20:36:38.802" endtime="20231128 20:36:38.812"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${temp}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:38.812" level="INFO">html/twoColumnR1</msg>
+<status status="PASS" starttime="20231128 20:36:38.812" endtime="20231128 20:36:38.812"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${layout_options}</arg>
+<arg>${temp}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231128 20:36:38.822" endtime="20231128 20:36:38.822"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:38.802" endtime="20231128 20:36:38.822"/>
+</iter>
+<iter>
+<var name="${i}">8</var>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${temp}</var>
+<arg>xpath:(//div[@id='popup-grid-section-box']//li[@data-section='Base'])[${i}]</arg>
+<arg>data-type</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20231128 20:36:38.832" level="INFO">${temp} = html/twoColumn</msg>
+<status status="PASS" starttime="20231128 20:36:38.822" endtime="20231128 20:36:38.832"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${temp}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:38.832" level="INFO">html/twoColumn</msg>
+<status status="PASS" starttime="20231128 20:36:38.832" endtime="20231128 20:36:38.832"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${layout_options}</arg>
+<arg>${temp}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231128 20:36:38.832" endtime="20231128 20:36:38.832"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:38.822" endtime="20231128 20:36:38.832"/>
+</iter>
+<iter>
+<var name="${i}">9</var>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${temp}</var>
+<arg>xpath:(//div[@id='popup-grid-section-box']//li[@data-section='Base'])[${i}]</arg>
+<arg>data-type</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20231128 20:36:38.853" level="INFO">${temp} = html/threeColumn</msg>
+<status status="PASS" starttime="20231128 20:36:38.832" endtime="20231128 20:36:38.853"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${temp}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:38.853" level="INFO">html/threeColumn</msg>
+<status status="PASS" starttime="20231128 20:36:38.853" endtime="20231128 20:36:38.853"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${layout_options}</arg>
+<arg>${temp}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231128 20:36:38.853" endtime="20231128 20:36:38.853"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:38.832" endtime="20231128 20:36:38.853"/>
+</iter>
+<iter>
+<var name="${i}">10</var>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${temp}</var>
+<arg>xpath:(//div[@id='popup-grid-section-box']//li[@data-section='Base'])[${i}]</arg>
+<arg>data-type</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20231128 20:36:38.887" level="INFO">${temp} = html/fourColumn</msg>
+<status status="PASS" starttime="20231128 20:36:38.853" endtime="20231128 20:36:38.887"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${temp}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:38.887" level="INFO">html/fourColumn</msg>
+<status status="PASS" starttime="20231128 20:36:38.887" endtime="20231128 20:36:38.887"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${layout_options}</arg>
+<arg>${temp}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231128 20:36:38.887" endtime="20231128 20:36:38.887"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:38.853" endtime="20231128 20:36:38.887"/>
+</iter>
+<status status="PASS" starttime="20231128 20:36:38.692" endtime="20231128 20:36:38.887"/>
+</for>
+<kw name="Log" library="BuiltIn">
+<arg>${layout_options}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:36:38.887" level="INFO">['html/oneColumn', 'html/twoColumnCustomL', 'html/twoColumnCustomR', 'html/twoColumnImg', 'html/twoColumnL1', 'html/twoColumnR1', 'html/twoColumn', 'html/threeColumn', 'html/fourColumn']</msg>
+<status status="PASS" starttime="20231128 20:36:38.887" endtime="20231128 20:36:38.887"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:38.362" endtime="20231128 20:36:38.887"/>
+</kw>
+<kw name="Choose one column layout" library="PO_AMP_Layout">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>${layout_onecolumn_locator}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20231128 20:36:38.887" level="INFO">Simulating Mouse Over on element 'xpath:(//div[@id='popup-grid-section-box']//li[@data-section='Base'])[2]'.</msg>
+<status status="PASS" starttime="20231128 20:36:38.887" endtime="20231128 20:36:39.172"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${layout_onecolumn_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:36:39.172" level="INFO">Clicking element 'xpath:(//div[@id='popup-grid-section-box']//li[@data-section='Base'])[2]'.</msg>
+<status status="PASS" starttime="20231128 20:36:39.172" endtime="20231128 20:36:39.432"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>30s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231128 20:37:09.433" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20231128 20:36:39.432" endtime="20231128 20:37:09.433"/>
+</kw>
+<status status="PASS" starttime="20231128 20:36:38.887" endtime="20231128 20:37:09.433"/>
+</kw>
+<kw name="Verify one column layout header" library="PO_AMP_Layout">
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>${inner_iframe_locator}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20231128 20:37:09.433" level="INFO">Selecting frame 'id:iframe1'.</msg>
+<status status="PASS" starttime="20231128 20:37:09.433" endtime="20231128 20:37:09.442"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${header}</var>
+<arg>${layout_onecolumn_header_locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:37:09.462" level="INFO">${header} = Blog Article</msg>
+<status status="PASS" starttime="20231128 20:37:09.442" endtime="20231128 20:37:09.462"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${header}</arg>
+<arg>${header_detail}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20231128 20:37:09.462" endtime="20231128 20:37:09.462"/>
+</kw>
+<status status="PASS" starttime="20231128 20:37:09.433" endtime="20231128 20:37:09.462"/>
+</kw>
+<kw name="Verify one column layout summary" library="PO_AMP_Layout">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${summary}</var>
+<arg>${layout_onecolumn_summary_locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:37:09.482" level="INFO">${summary} = Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet integer ut nulla tincidunt felis elit id ac.</msg>
+<status status="PASS" starttime="20231128 20:37:09.462" endtime="20231128 20:37:09.482"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${summary}</arg>
+<arg>${summary detail}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20231128 20:37:09.482" endtime="20231128 20:37:09.482"/>
+</kw>
+<status status="PASS" starttime="20231128 20:37:09.462" endtime="20231128 20:37:09.482"/>
+</kw>
+<kw name="Verify one column layout readmore link" library="PO_AMP_Layout">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${readmore}</var>
+<arg>${layout_onecolumn_readmore_locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:37:09.502" level="INFO">${readmore} = Read more</msg>
+<status status="PASS" starttime="20231128 20:37:09.492" endtime="20231128 20:37:09.502"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${readmore}</arg>
+<arg>${readmore_text}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20231128 20:37:09.502" endtime="20231128 20:37:09.502"/>
+</kw>
+<status status="PASS" starttime="20231128 20:37:09.482" endtime="20231128 20:37:09.502"/>
+</kw>
+<kw name="Verify Options in readmore link" library="PO_AMP_Layout">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${layout_onecolumn_readmore_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:37:09.502" level="INFO">Clicking element 'xpath://div[@class='smt-element']//a[starts-with(@class, 'cta_btn')]'.</msg>
+<status status="PASS" starttime="20231128 20:37:09.502" endtime="20231128 20:37:09.902"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20231128 20:37:09.902" endtime="20231128 20:37:09.902"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>${iFrame id}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20231128 20:37:09.902" level="INFO">Selecting frame 'id:ampEditor'.</msg>
+<status status="PASS" starttime="20231128 20:37:09.902" endtime="20231128 20:37:09.912"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${new_inner_element_locator}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20231128 20:37:09.922" level="INFO">Current page contains element 'xpath://div[@id='iframe-layer']//a[@class='add-inner-non-form-elements']'.</msg>
+<status status="PASS" starttime="20231128 20:37:09.912" endtime="20231128 20:37:09.922"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${clone_button_locator}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20231128 20:37:09.922" level="INFO">Current page contains element 'xpath://div[@class='all-icons-inner-non-form-elements']//a[@class='clone-btn']'.</msg>
+<status status="PASS" starttime="20231128 20:37:09.922" endtime="20231128 20:37:09.922"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${up_button_locator}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20231128 20:37:09.932" level="INFO">Current page contains element 'xpath://div[@class='all-icons-inner-non-form-elements']//a[@class='up-btn']'.</msg>
+<status status="PASS" starttime="20231128 20:37:09.932" endtime="20231128 20:37:09.932"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${delete_button_locator}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20231128 20:37:09.932" level="INFO">Current page contains element 'xpath://div[@class='all-icons-inner-non-form-elements']//a[@class='delete-btn']'.</msg>
+<status status="PASS" starttime="20231128 20:37:09.932" endtime="20231128 20:37:09.932"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${new_inner_element_locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:37:09.942" level="INFO">Clicking element 'xpath://div[@id='iframe-layer']//a[@class='add-inner-non-form-elements']'.</msg>
+<status status="PASS" starttime="20231128 20:37:09.932" endtime="20231128 20:37:10.181"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231128 20:37:15.182" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231128 20:37:10.181" endtime="20231128 20:37:15.182"/>
+</kw>
+<status status="PASS" starttime="20231128 20:37:09.502" endtime="20231128 20:37:15.182"/>
+</kw>
+<kw name="Click basic options heading from readmore link" library="PO_AMP_Layout">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${heading_option_read}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:37:15.182" level="INFO">Clicking element 'xpath://div[@id='inner-non-form-section-box']//li[@data-type='html/innerheading']'.</msg>
+<status status="PASS" starttime="20231128 20:37:15.182" endtime="20231128 20:37:15.432"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231128 20:37:18.432" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231128 20:37:15.432" endtime="20231128 20:37:18.432"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>${inner_iframe_locator}</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20231128 20:37:18.432" level="INFO">Selecting frame 'id:iframe1'.</msg>
+<status status="PASS" starttime="20231128 20:37:18.432" endtime="20231128 20:37:18.432"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>${heading_text_locator}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20231128 20:37:18.441" level="INFO">Current page contains element 'xpath://div[@class='smt-element tinymce-heading']/h1'.</msg>
+<status status="PASS" starttime="20231128 20:37:18.432" endtime="20231128 20:37:18.441"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${header}</var>
+<arg>${heading_text_locator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20231128 20:37:18.452" level="INFO">${header} = Heading</msg>
+<status status="PASS" starttime="20231128 20:37:18.441" endtime="20231128 20:37:18.452"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${header}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231128 20:37:18.452" level="INFO">Heading</msg>
+<status status="PASS" starttime="20231128 20:37:18.452" endtime="20231128 20:37:18.452"/>
+</kw>
+<status status="PASS" starttime="20231128 20:37:15.182" endtime="20231128 20:37:18.452"/>
+</kw>
+<kw name="Quit Browser" library="PO_LoginPage">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231128 20:37:18.452" endtime="20231128 20:37:21.862"/>
+</kw>
+<status status="PASS" starttime="20231128 20:37:18.452" endtime="20231128 20:37:21.862"/>
+</kw>
+<tag>Main</tag>
+<status status="PASS" starttime="20231128 20:35:07.243" endtime="20231128 20:37:21.862"/>
+</test>
+<doc>HomePage Login</doc>
+<status status="PASS" starttime="20231128 20:35:06.858" endtime="20231128 20:37:21.869"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Main</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcase1">Testcase1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
